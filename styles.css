@@ -1,0 +1,126 @@
+body {
+    background: black;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header */
+
+header {
+    background: transparent;
+    background-image: url("images/image3.jpg"); 
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+header .mobile {
+    display: none;
+}
+
+header .logo a {
+    background-image: url("images/image4.jpg");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 80px;
+    text-indent: -999999px;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+li:hover {
+    background-color: transparent;
+}
+li:first-child {
+    margin-left: 0px;
+}
+
+/* Responsive rules */
+@media screen and (max-width: 715px) {
+    header {
+        height: 250px;
+        background-position: 0px -30px;
+    }
+    header .mobile {
+        display: inline-block;
+    }
+    header .desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        height: 200px;
+        background-position: 0px 0px;
+    }
+}  
+
+/* Features */
+
+.feature {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    color: grey;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.feature figure {
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    width: 200px;
+    padding: 5px;
+}
+
+.feature figure img {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 200 px;
+    box-shadow: grey 0px 0px 10px;
+}
+
+/* Responsive rules */
+
+/* We don't have to use this at all, we can instead use flex wrap for feature to look nice when screen shrinks 
+@media screen and (max-width: 715px) {
+    .feature {
+        display: block;
+    }
+} */
+
+/* Footer */
+
+footer {
+    background: transparent;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+
